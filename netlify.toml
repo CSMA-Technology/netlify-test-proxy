@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/:splat"
+  from = "/*"
   to = "REDIRECT_URL/:splat"
   status = 200
   signed = "SIGNATURE_TOKEN"
