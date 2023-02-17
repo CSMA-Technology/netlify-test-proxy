@@ -1,0 +1,8 @@
+[[redirects]]
+  from = "/:splat"
+  to = "REDIRECT_URL/:splat"
+  status = 200
+  signed = "SIGNATURE_TOKEN"
+
+[build]
+  command = "sed -i \"s|REDIRECT_URL|${REDIRECT_URL}|g\" netlify.toml"
